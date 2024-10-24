@@ -1,0 +1,7 @@
+{
+  "name": "cutouD",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
