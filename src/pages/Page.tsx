@@ -7,6 +7,7 @@ import UniversityDetector from '../components/UniversityDetector';
 import Weather from '../components/Weather';
 import Harvard from '../components/Harvard';
 import HireMe from '../components/HireMe';
+import Home from '../components/Home';
 
 const Page: React.FC = () => {
 
@@ -29,7 +30,7 @@ const Page: React.FC = () => {
             <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <HireMe/>
+        {name === 'Home' ? <Home/> : name === 'Predecir Genero' ? <GenderDetector/> : name === 'Predecir Edad' ? <AgeDetector/> : name === 'Universidades' ? <UniversityDetector/> : name === 'Clima' ? <Weather/> : name==='Noticias' ? <Harvard/> : name === 'Contratame' ? <HireMe/> : ''}
       </IonContent>
     </IonPage>
   );

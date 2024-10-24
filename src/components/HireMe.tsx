@@ -15,9 +15,9 @@ const HireMe = () => {
     <>
       <IonContent>
         <IonCard>
-          <IonCardHeader>
-            <IonAvatar>
-              <img src={foto} alt="" />
+          <IonCardHeader style={{ display: 'flex', justifyContent: 'center' }}>
+            <IonAvatar style={{ width: '100px', height: '100px' }}>
+              <img src={foto} alt="" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
             </IonAvatar>
           </IonCardHeader>
           <IonCardContent>
@@ -28,17 +28,12 @@ const HireMe = () => {
             </IonItem>
             <IonItem>
               <IonText>
-                <b>Github:</b> Christopher Mercado
+                <b>Github:</b> <a href="https://github.com/ChristopherMercadoB?tab=repositories">ChristopherMercadoB</a>
               </IonText>
             </IonItem>
             <IonItem>
               <IonText>
-                <b>Nombre:</b> Christopher Mercado
-              </IonText>
-            </IonItem>
-            <IonItem>
-              <IonText>
-                <b>Nombre:</b> Christopher Mercado
+                <b>Linkedin:</b> <a href="https://www.linkedin.com/in/christopher-mercado-8a8582310/">christopher-mercado</a>
               </IonText>
             </IonItem>
           </IonCardContent>
