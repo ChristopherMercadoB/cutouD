@@ -23,41 +23,48 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/folder/Inbox',
+    title: 'Home',
+    url: '/folder/Home',
     iosIcon: mailOutline,
     mdIcon: mailSharp
   },
   {
-    title: 'Outbox',
-    url: '/folder/Outbox',
+    title: 'Predecir Genero',
+    url: '/folder/Predecir Genero',
     iosIcon: paperPlaneOutline,
     mdIcon: paperPlaneSharp
   },
   {
-    title: 'Favorites',
-    url: '/folder/Favorites',
+    title: 'Predecir Edad',
+    url: '/folder/Predecir Edad',
     iosIcon: heartOutline,
     mdIcon: heartSharp
   },
   {
-    title: 'Archived',
-    url: '/folder/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    title: 'Universidades',
+    url: '/folder/Universidades',
+    iosIcon: heartOutline,
+    mdIcon: heartSharp
   },
   {
-    title: 'Trash',
-    url: '/folder/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    title: 'Clima',
+    url: '/folder/Clima',
+    iosIcon: heartOutline,
+    mdIcon: heartSharp
   },
   {
-    title: 'Spam',
-    url: '/folder/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title: 'Noticias',
+    url: '/folder/Noticias',
+    iosIcon: heartOutline,
+    mdIcon: heartSharp
+  },
+  {
+    title: 'Contratame',
+    url: '/folder/Contratame',
+    iosIcon: heartOutline,
+    mdIcon: heartSharp
   }
+ 
 ];
 
 const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
@@ -84,13 +91,8 @@ const Menu: React.FC = () => {
         </IonList>
 
         <IonList id="labels-list">
-          <IonListHeader>Labels</IonListHeader>
-          {labels.map((label, index) => (
-            <IonItem lines="none" key={index}>
-              <IonIcon aria-hidden="true" slot="start" icon={bookmarkOutline} />
-              <IonLabel>{label}</IonLabel>
-            </IonItem>
-          ))}
+        
+          
         </IonList>
       </IonContent>
     </IonMenu>

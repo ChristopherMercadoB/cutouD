@@ -1,0 +1,23 @@
+.male{
+    margin-top: 20px;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(0, 85, 255);
+}
+
+.female{
+    margin-top: 20px;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 132, 153);
+}
+
+.both{
+    margin-top: 20px;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+}
